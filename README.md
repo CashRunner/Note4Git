@@ -1,2 +1,2 @@
-# Note4Git
-note when learning Git
+# about this repository
+note about learing git

@@ -371,6 +371,27 @@ git rebase有风险。没搞懂这个风险表现在哪里？
 
 ### 公开的小型项目 
 
+看鸡巴不懂，没几把说清楚。
+
+# 6 Git 小技巧
+
+查看指定commit的提交的内容
+
+```shell
+git log # 查看commit历史，显示每次commit是的message和修改内容
+git log --abbrev-commit pretty=oneline #n 唯一SHA码 commit历史查看
+git show [SHA1码] # 显示指定某次提交
+git show master # 显示master分支最近一次提交，提交的内容和git show [master指向提交的SHA1码]效果相同
+git log --pretty=format:'%h %s' --graph # 图形化查看提交历史
+git reflog # 查看历史HEAD指针指向分支的提交
+git show HEAD@{num} # 查看从当前HEAD开始向之前回溯第num个版本的提交内容。
+git show HEAD^ # 当前分支当前提交的前一个提交，注意是当前分支。会忽略其他分支与当前分支的合并提交历史。区别 git reflog指令，该指令显示HEAD曾今到过的分支，以及在上面的提交。	
+git show master^ # master分支上一次提交
+git show master^2 # master 分支上两次提交
+```
+
+当前进度 提交范围 感觉后面没啥必要看的了。
+
 
 
 
@@ -385,4 +406,4 @@ github上的协作者群组是怎么回事？如何操作？
 
 百度打车多少钱。平摊
 
-# 当前进度 公开的小型项目
+# 当前进度 公开的小型项目r·
